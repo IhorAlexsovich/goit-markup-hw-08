@@ -1,0 +1,26 @@
+.header__logo{
+  text-decoration: none;
+  margin-right: 93px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  font-family: var( --font-second );
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+   @media screen and (max-width:767px) {
+     position: absolute;
+     left: 15px;
+    
+
+  }
+}
+
+.header__logo--start{
+  color: var( --accent-color );
+  
+}
+.header__logo--end{
+  color: #000;
+}
