@@ -3,20 +3,20 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.portfolio__main{
+.portfolio-main{
   @extend %flex;
   
   
   margin-bottom: 56px;
 }
-.portfolio__list{
+.portfolio-list{
   display: flex;
   flex-wrap: wrap;  
   margin-top: -30px; 
   margin-left: -30px;
 }
 
-.portfolio__list--image{
+.portfolio-list--image{
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -28,14 +28,14 @@
   rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.portfolio__list--image:hover .portfolio__overlay{
+.portfolio-list--image:hover .portfolio-overlay{
   transform:translateY(0) ;
 }
-.thumb__portfolio{
+.thumb-portfolio{
   position: relative;
   overflow: hidden;
 }
-.portfolio__overlay{
+.portfolio-overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -48,7 +48,7 @@
   background: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio__overlay--text{
+.portfolio-overlay--text{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,11 +62,11 @@
   color:var(--other-color) ;
 }
 
-.portfolio__paragraf{
+.portfolio-paragraf{
   padding: 20px 24px;
   
 }
-.portfolio__paragraf--title{
+.portfolio-paragraf--title{
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -74,7 +74,7 @@
   margin-bottom: 4px;
   
 }
-.portfolio__paragraf--function{
+.portfolio-paragraf--function{
   color: var(--second-color);
   font-size: 16px;
   line-height: 1.87;
@@ -88,12 +88,12 @@
   color:var( --accent-color ) ;
 }
 
-.portfolio__list--button,
+.portfolio-main__button,
 .order-button{
   cursor: pointer;
   border:none;
 }
-.portfolio__list--button{ 
+.portfolio-main__button{ 
   background: #F5F4FA;
   border-radius: 4px;
   color: var(--brand-color);
@@ -103,7 +103,7 @@
   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
-.portfolio__list--button{
+.portfolio-main__button{
   &:focus, &:hover{
      background-color: var( --accent-color );
   color: #F5F4FA;
@@ -181,7 +181,7 @@
   font-size: 16px;
   line-height: 1.62;
 }
-.portfolio__paragraf--title{
+.portfolio-paragraf--title{
   font-weight: bold;
   font-size: 18px;
   line-height: 2;

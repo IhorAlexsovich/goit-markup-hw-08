@@ -8,6 +8,7 @@ display: flex;
 }
 .contact-footer{
   @include tel {
+    text-align: center;
     
 
   }
@@ -23,8 +24,14 @@ display: flex;
   
 }
 
-
-.footer__contact--item{
+.footer-contact{
+  @include tel{
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+}
+.footer-contact__item{
+  
   &:hover, &:focus{
     .link{
       color: var( --accent-color );
@@ -33,13 +40,32 @@ display: flex;
 }
 
 .footer-left{
+
   text-decoration: none;
-  margin-right: 70px;
+  @include desk{
+ margin-right: 70px;
+  }
+ 
   
 }
 .logo-footer{
- 
-  display: flex;
+  @include tel {
+
+     
+  text-decoration: none;
+  font-family: Raleway;
+font-style: normal;
+  font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+letter-spacing: 0.03em;
+  &__start{color: var( --accent-color );}
+  &__end{color: var( --other-color );}
+  
+  }
+  @include desk {
+display: flex;
   padding: 0;
   margin-bottom: 20px;
   text-decoration: none;
@@ -54,6 +80,8 @@ display: flex;
   line-height: 1.19;
   &__start{color: var( --accent-color );}
   &__end{color: var( --other-color );}
+  }
+  
 }
 /*
 .logo-footer__start{
@@ -111,13 +139,16 @@ display: flex;
     margin-bottom: 20px;
     
   }
-  .footer-social-list {
+  .footer-social {
+    @include tel {
+      margin-bottom: 60px;
+    }
   @extend %flex;
   }
-  .footer-social-list__item + .footer-social-list__item{
+  .footer-social__item + .footer-social__item{
    margin-left: 10px;
   }
-  .footer-social-list__link{
+  .footer-social__link{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -125,12 +156,12 @@ display: flex;
     @extend %flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .footer-social-list__icon{
+  .footer-social__icon{
     fill: #F5F4FA;
     
   }
 
-   .footer-social-list__link{
+   .footer-social__link{
      &:hover, &:focus{
        background-color:var( --accent-color ) ;
      }
@@ -139,7 +170,10 @@ display: flex;
 
  
   .footer-right{
-    margin-left: 70px;
+    @include desk {
+ margin-left: 70px;
+    }
+   
     
   }
 
@@ -171,6 +205,7 @@ position: relative;
     font-size: 16px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.6);
+    
   }
 
   .footer-input-email{
@@ -185,14 +220,24 @@ position: relative;
 
 
   .footer-label-email{
-    position: absolute;
+    @include tel {
+
+    }
+    @include desk {
+      position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
+    }
+    
 
   }
 
   .button-footer-form{
+    @include tel {
+    margin: 20px auto ;
+     
+    }
     @extend %flex;
     width: 200px;
     height: 50px;
@@ -203,6 +248,7 @@ position: relative;
   }
 
   .footer-button-text{
+  
     
     letter-spacing: 0.06em;
     font-weight: bold;
@@ -211,5 +257,7 @@ position: relative;
     color: var( --other-color );
   }
 .form-send-icon{
-  margin-left: 10px;
+ 
+
+
 }

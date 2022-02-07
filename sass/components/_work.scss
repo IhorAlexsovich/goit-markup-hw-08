@@ -6,13 +6,13 @@
   background: var( --other-color );
   padding-bottom: 94px;
 }
-.work__list{
+.work-list{
   
   display: flex;
   
 }
 
-.work__item:not(:last-child){
+.work-list__item:not(:last-child){
   margin-right: 27px;
 }
 .work__title{
@@ -23,7 +23,7 @@
   margin-left: auto;  
   margin-right: auto; 
   }
-.work__item{
+.work-list__item{
   position: relative;
 }
 .work__text{
