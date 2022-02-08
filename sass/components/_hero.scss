@@ -4,9 +4,14 @@
   padding-top: 94px;
 }
 .hero-list{
-  
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+@include tab {
+  flex-wrap: wrap;
+}
   @include desk {
-  display: flex;
+
   align-items: center;
  }
 }
@@ -27,6 +32,9 @@
 }
 
 .title__content{
+  @include tab {
+    
+  }
   @include tel {
     
     margin-bottom: 30px;
@@ -49,9 +57,15 @@
 }
 
 .hero-list__item{
+  @media screen and (min-width: 768px) {
+   
+ 
+   width: calc((100% - 2 * 30px) / 2);
+ margin: 15px;
+}
+ }
   @include desk {
 margin-right: 30px;
   min-width: 270px;
   }
   
-}

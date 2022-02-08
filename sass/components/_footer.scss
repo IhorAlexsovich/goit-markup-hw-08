@@ -1,13 +1,20 @@
 .main-footer{
+  @media screen and (min-width:768px) {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
  
-  @include desk{
-display: flex;
+   
+ @media screen and (min-width:1200px) {
+flex-wrap: nowrap;
   align-items: baseline;
   }
   
 }
 .contact-footer{
   @include tel {
+    display: block;
     text-align: center;
     
 
@@ -25,10 +32,17 @@ display: flex;
 }
 
 .footer-contact{
-  @include tel{
+   margin-top: 20px;
+   @include tel{
     margin-bottom: 60px;
     margin-top: 20px;
   }
+  @media screen and (max-width:1199px) {
+     margin-bottom: 60px;
+    margin-top: 20px;
+  }
+ 
+ 
 }
 .footer-contact__item{
   
@@ -42,8 +56,12 @@ display: flex;
 .footer-left{
 
   text-decoration: none;
+  @include tab {
+ margin-left: auto;
+ text-align: center;
+  }
   @include desk{
- margin-right: 70px;
+ margin-right: 60px;
   }
  
   
@@ -52,18 +70,7 @@ display: flex;
   @include tel {
 
      
-  text-decoration: none;
-  font-family: Raleway;
-font-style: normal;
-  font-weight: bold;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-letter-spacing: 0.03em;
-  &__start{color: var( --accent-color );}
-  &__end{color: var( --other-color );}
   
-  }
   @include desk {
 display: flex;
   padding: 0;
@@ -83,6 +90,18 @@ display: flex;
   }
   
 }
+text-decoration: none;
+  font-family: Raleway;
+font-style: normal;
+  font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+letter-spacing: 0.03em;
+  &__start{color: var( --accent-color );}
+  &__end{color: var( --other-color );}
+  
+  }
 /*
 .logo-footer__start{
  color: var( --accent-color );
@@ -127,7 +146,10 @@ display: flex;
   }
  
   .footer-center{
-    
+    @include tab {
+      margin: 0 auto;
+      text-align: center;
+    }
   }
   .footer-center-title{
     color: var( --other-color );
@@ -170,6 +192,11 @@ display: flex;
 
  
   .footer-right{
+    @include tab {
+  margin: 0 auto;
+    text-align: center;
+    }
+  
     @include desk {
  margin-left: 70px;
     }
@@ -178,6 +205,7 @@ display: flex;
   }
 
   .footer-form-field{
+    
     @include desk {
 position: relative;
     display: flex;
@@ -205,7 +233,9 @@ position: relative;
     font-size: 16px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.6);
-    
+    @include tab {
+      margin-bottom: 20px;
+    }
   }
 
   .footer-input-email{
@@ -237,6 +267,9 @@ position: relative;
     @include tel {
     margin: 20px auto ;
      
+    }
+    @include tab {
+      margin: 0 auto
     }
     @extend %flex;
     width: 200px;

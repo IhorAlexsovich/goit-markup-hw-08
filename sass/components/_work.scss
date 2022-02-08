@@ -1,5 +1,8 @@
 .work{
-  @include tel {
+  @include tel  {
+    display: none;
+  }
+  @include tab  {
     display: none;
   }
   text-align: center;
