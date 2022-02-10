@@ -13,6 +13,9 @@
   background: var( --other-color );
 }
 .header__container{
+  @media screen and (min-width: 767px) {
+    height: 80px;
+  }
    @include tel {
      height: 60px;
      
