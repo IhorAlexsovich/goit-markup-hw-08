@@ -1,6 +1,9 @@
 .customer{
   padding: 94px 0;
   background-color: var( --other-color );
+  @include tab {
+    padding: 60px 0;
+  }
 }
 
 .container{
@@ -20,6 +23,7 @@
   
 @media screen and (min-width: 480px) {
    flex-wrap: wrap;
+   margin-bottom: -15px;
  }
 
    

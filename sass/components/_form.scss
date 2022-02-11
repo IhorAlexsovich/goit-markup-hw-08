@@ -2,7 +2,7 @@ textarea{
   resize: none;
 }
 .modal{
-  @include tel {
+  @include tab {
     width: 450px;
 height: 609px;
   }
@@ -63,7 +63,7 @@ height: 609px;
 }
 
 .modal-title{
-  @include tel {
+  @include tab {
   width: 370px;
   }
   font-weight: bold;
@@ -76,7 +76,7 @@ height: 609px;
   }
 
   .form{
-    @include tel {
+    @include tab {
       width:370px ;
     }
     padding: 0;
@@ -144,9 +144,10 @@ height: 609px;
   }
 
   .polisity-label{
-    @include tel {
+    @include tab {
       font-size: 12px;
     }
+   
     font-weight: normal;
 font-size: 14px;
 line-height: 1.2;
