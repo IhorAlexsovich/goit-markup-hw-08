@@ -1230,7 +1230,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .portfolio-section {
-    padding: 60px 15px;
+    padding: 60px 0;
   }
 }
 
@@ -1261,6 +1261,7 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 15px;
     margin-bottom: 40px;
   }
 }
@@ -1273,7 +1274,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .portfolio-list {
-    width: 450px;
+    max-width: 450px;
+    width: 100vmin 100vmax;
+    margin: 0 auto;
   }
 }
 
@@ -1361,7 +1364,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .portfolio-overlay {
-    width: 450px;
+    max-width: 450px;
+    width: 100vmin 100vmax;
     height: 294px;
   }
 }

@@ -1,6 +1,6 @@
 .portfolio-section{
   @include tel {
-    padding: 60px 15px;
+    padding: 60px 0;
   }
   @media screen and (min-width: 768px) {
     padding: 60px 0;
@@ -19,6 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-left: 15px;
     margin-bottom: 40px;
    
   }
@@ -32,7 +33,9 @@
 }
 .portfolio-list{
   @include tel {
-    width: 450px;
+    max-width: 450px;
+    width: 100vmin 100vmax;
+      margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -55,6 +58,7 @@
 .portfolio-list--image{
   @include tel {
     margin-bottom: 30px;
+    
   }
   @media screen and (min-width: 768px) {
     
@@ -89,7 +93,9 @@ flex-basis: calc(100% / 3 - 30px);
 }
 .portfolio-overlay{
   @include tel{
-    width: 450px;
+    
+     max-width: 450px;
+    width: 100vmin 100vmax;
 height: 294px;
   }
   position: absolute;
