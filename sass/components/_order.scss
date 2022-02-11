@@ -66,6 +66,7 @@
 
     @include tab {
       max-width: 360px;
+      
       width: 100vmin;
     font-size: 26px;
     line-height: 1.61;
@@ -91,10 +92,7 @@
 }
 /*button */
 .order-title{
-  @include tel{
-    
-    text-align: center;
-  }
+ 
   @include tab {
 text-align: center;
   }

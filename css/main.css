@@ -487,12 +487,6 @@ img {
 }
 
 /*button */
-@media screen and (max-width: 767px) {
-  .order-title {
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .order-title {
     text-align: center;
@@ -615,12 +609,6 @@ img {
   text-align: center;
   background: var(--other-color);
   padding-bottom: 94px;
-}
-
-@media screen and (max-width: 767px) {
-  .work {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1199px) {
