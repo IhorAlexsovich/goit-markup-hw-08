@@ -21,7 +21,7 @@
 .customer-list{
   display: flex;
   
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
    flex-wrap: wrap;
    margin-bottom: -15px;
  }

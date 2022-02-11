@@ -22,6 +22,10 @@ img {
 }
 
 .container {
+  min-width: 320px;
+}
+
+.container {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -475,7 +479,8 @@ img {
 
 @media screen and (max-width: 1199px) {
   .order-text {
-    width: 360px;
+    max-width: 360px;
+    width: 100vmin;
     font-size: 26px;
     line-height: 1.61;
   }
@@ -824,7 +829,7 @@ img {
   display: flex;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .customer-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1162,7 +1167,6 @@ img {
 }
 
 .footer-input-email {
-  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -1171,6 +1175,13 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-input-email {
+    max-width: 450px;
+    width: 100vmin;
+  }
 }
 
 @media screen and (min-width: 1200px) {
