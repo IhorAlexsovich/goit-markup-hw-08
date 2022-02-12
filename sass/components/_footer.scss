@@ -243,9 +243,13 @@ position: relative;
       max-width: 450px;
       width: 100vmin;
       
-  
     }
-    
+    @media screen and (max-width: 479px) {
+      width: 90vmin;
+    }
+    @include desk {
+      width: 358px;
+    }
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;

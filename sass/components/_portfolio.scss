@@ -1,6 +1,7 @@
 .portfolio-section{
   @include tab {
-    padding: 60px 0;
+   padding-bottom: 60px;
+   padding-top: 60px;
   }
   @media screen and (min-width: 1200px){
   
@@ -15,12 +16,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 15px;
+    
     margin-bottom: 40px;
    
   }
   @include tab {
     margin-bottom: 30px;
+    
   }
   @extend %flex;
   
@@ -31,7 +33,7 @@
   @include tel {
     max-width: 450px;
     width: 100vmin 100vmax;
-      margin: 0 auto;
+      
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -44,8 +46,8 @@
   
   }
   @media screen and (min-width: 768px) {
-     
-     margin-left: -15px;
+      margin-left: -15px;
+    
       
    
   }

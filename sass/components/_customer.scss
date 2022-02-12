@@ -2,14 +2,18 @@
   padding: 94px 0;
   background-color: var( --other-color );
   @include tab {
-    padding: 60px 0;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
-.container{
-  padding: 0;
-}
+
 .customer__title{
+  @include tab {
+      font-size: 28px;
+      line-height:1.17 ;
+      margin-bottom: 30px;
+    }
   font-weight: bold;
   font-size: 36px;
   line-height: 1.15;
@@ -23,7 +27,8 @@
   
 @media screen and (max-width: 1199px) {
    flex-wrap: wrap;
-   margin-bottom: -15px;
+   margin-left: -30px;
+margin-top: -30px;
  }
 
    
@@ -40,14 +45,15 @@
     
     flex-basis: calc((100% - 2 * 30px) / 2);
     
-    margin: 15px;
+  
 
   }
   
   @include tab {
     width: calc((100% - 3 * 30px) / 3);
     
-    margin: 15px;
+    margin-left: 30px;
+  margin-top: 30px;
     
   }
   @include desk {
